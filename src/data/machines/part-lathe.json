@@ -1,0 +1,75 @@
+{
+  "id": "part-lathe",
+  "name": "Cog, Wheel & Widget Lathe",
+  "category": "parts",
+  "placementRule": "open-ground",
+  "footprint": { "width": 8, "depth": 9, "height": 7 },
+  "spinUpSec": 1.2,
+  "spinDownSec": 2.0,
+  "inStackCapacity": 100,
+  "outStackCapacity": 100,
+  "ports": [
+    { "id": "in_0", "type": "input", "relDepth": -0.5, "relWidth": -0.2, "height": 1.0 },
+    { "id": "in_1", "type": "input", "relDepth": -0.5, "relWidth": 0.2, "height": 1.0 },
+    { "id": "out_0", "type": "output", "relDepth": 0.5, "relWidth": 0, "height": 1.0 }
+  ],
+  "modes": [
+    {
+      "id": "wheel-mode",
+      "label": "Painted Toy Wheels",
+      "powerMW": 5,
+      "cycleSec": 1.4,
+      "inputs": [
+        { "itemType": "wood-block", "count": 1 }
+      ],
+      "producesItem": "wheel",
+      "byproductItem": "spare-parts",
+      "byproductEveryCycles": 2
+    },
+    {
+      "id": "cog-mode",
+      "label": "Clockwork Brass Cogs",
+      "powerMW": 5,
+      "cycleSec": 1.4,
+      "inputs": [
+        { "itemType": "tin-ingot", "count": 1 }
+      ],
+      "producesItem": "cog",
+      "byproductItem": "spare-parts",
+      "byproductEveryCycles": 2
+    },
+    {
+      "id": "widget-mode",
+      "label": "Rainbow Star Widgets",
+      "powerMW": 6,
+      "cycleSec": 1.6,
+      "inputs": [
+        { "itemType": "tin-ingot", "count": 1 },
+        { "itemType": "rainbow-dye", "count": 1 }
+      ],
+      "producesItem": "widget",
+      "byproductItem": "spare-parts",
+      "byproductEveryCycles": 1
+    }
+  ],
+  "basket": {
+    "id": "basket_lathe_parts",
+    "label": "SPARE PARTS",
+    "itemType": "spare-parts",
+    "capacity": 40,
+    "offset": { "x": -1.0, "y": 0, "z": 4.7 }
+  },
+  "blockout": [
+    { "shape": "box", "size": [7.8, 6.4, 6.4], "position": [0, 3.2, 0], "colorHex": "#fef08a" },
+    { "shape": "cylinder", "size": [0.8, 2.2, 0.8], "position": [1.2, 7.2, 0], "colorHex": "#eab308" }
+  ],
+  "detailed": {
+    "shellColorHex": "#f6eac2",
+    "trimColorHex": "#f59e0b",
+    "roofStyle": "bunting-and-stacks",
+    "interiorTheme": "gizmo-lathe",
+    "hasCutawayWindow": true,
+    "smokeOffsets": [{ "x": 1.2, "y": 8.4, "z": 0 }],
+    "helperTeddySide": "none"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "toy-assembler",
+  "name": "Wonder-Toy Assembler",
+  "category": "toys",
+  "placementRule": "open-ground",
+  "footprint": { "width": 8, "depth": 10, "height": 8 },
+  "spinUpSec": 1.5,
+  "spinDownSec": 2.5,
+  "inStackCapacity": 100,
+  "outStackCapacity": 100,
+  "ports": [
+    { "id": "in_0", "type": "input", "relDepth": -0.5, "relWidth": -0.22, "height": 1.0 },
+    { "id": "in_1", "type": "input", "relDepth": -0.5, "relWidth": 0.22, "height": 1.0 },
+    { "id": "out_0", "type": "output", "relDepth": 0.5, "relWidth": 0, "height": 1.0 }
+  ],
+  "modes": [
+    {
+      "id": "train-mode",
+      "label": "Wooden Choo-Choo Train",
+      "powerMW": 8,
+      "cycleSec": 2.0,
+      "inputs": [
+        { "itemType": "wheel", "count": 1 },
+        { "itemType": "cog", "count": 1 }
+      ],
+      "producesItem": "toy-train",
+      "byproductItem": "spare-parts",
+      "byproductEveryCycles": 1
+    },
+    {
+      "id": "top-mode",
+      "label": "Carnival Spinning Top",
+      "powerMW": 7,
+      "cycleSec": 1.8,
+      "inputs": [
+        { "itemType": "wood-block", "count": 1 },
+        { "itemType": "rainbow-dye", "count": 1 }
+      ],
+      "producesItem": "spinning-top",
+      "byproductItem": "spare-parts",
+      "byproductEveryCycles": 2
+    },
+    {
+      "id": "rocket-mode",
+      "label": "Wind-Up Tin Rocket",
+      "powerMW": 9,
+      "cycleSec": 2.2,
+      "inputs": [
+        { "itemType": "widget", "count": 1 },
+        { "itemType": "cog", "count": 1 }
+      ],
+      "producesItem": "toy-rocket",
+      "byproductItem": "spare-parts",
+      "byproductEveryCycles": 1
+    }
+  ],
+  "basket": {
+    "id": "basket_toy_parts",
+    "label": "SPARE PARTS",
+    "itemType": "spare-parts",
+    "capacity": 40,
+    "offset": { "x": -1.2, "y": 0, "z": 4.9 }
+  },
+  "blockout": [
+    { "shape": "box", "size": [8.4, 6.8, 6.6], "position": [0, 3.4, 0], "colorHex": "#a7f3d0" },
+    { "shape": "cylinder", "size": [0.6, 2.4, 0.6], "position": [1.5, 7.6, 0], "colorHex": "#eab308" }
+  ],
+  "detailed": {
+    "shellColorHex": "#a7dbc8",
+    "trimColorHex": "#facc15",
+    "roofStyle": "bunting-and-stacks",
+    "interiorTheme": "toy-assembly",
+    "hasCutawayWindow": true,
+    "smokeOffsets": [
+      { "x": 0.4, "y": 8.6, "z": 0 },
+      { "x": 1.5, "y": 8.8, "z": 0 },
+      { "x": 2.6, "y": 9.1, "z": 0 }
+    ],
+    "helperTeddySide": "right"
+  }
+}

@@ -1,0 +1,74 @@
+# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Dependencies
+node_modules/
+
+# Compiled & Bundled Output
+dist/
+dist-ssr/
+out-tsc/
+.vite/
+*.tsbuildinfo
+*.local
+*.zip
+
+# Scratch, Agent & Temporary Artifacts
+scratch/
+.system_generated/
+tmp/
+.tmp/
+.cache/
+.local/
+coverage/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IDEs & Editors
+.idea/
+.ionide/
+.vs/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio / .NET (future server & worker modules)
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+TestResults/
+[Tt]est[Rr]esults/
+*.user
+*.suo
+*.slnx
+.dotnet/
+
+# Code Signing & Certificates
+/certs/*.pfx
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+!.env.md
+
+# Logs & Diagnostics
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+testem.log
+LogFiles/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+Desktop.ini

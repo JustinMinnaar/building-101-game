@@ -1,0 +1,38 @@
+{
+  "id": "color-extractor",
+  "name": "Rainbow Color Extractor",
+  "category": "harvest",
+  "placementRule": "resource-node",
+  "acceptedNodeTypes": ["rainbow-dye", "red-goo", "gold-goo", "blue-goo"],
+  "footprint": { "width": 6, "depth": 8, "height": 7 },
+  "spinUpSec": 1.0,
+  "spinDownSec": 1.5,
+  "inStackCapacity": 50,
+  "outStackCapacity": 100,
+  "ports": [
+    { "id": "out_0", "type": "output", "relDepth": 0.5, "relWidth": 0, "height": 1.0 }
+  ],
+  "modes": [
+    {
+      "id": "extract-prism",
+      "label": "Prism River Siphon",
+      "powerMW": 4,
+      "cycleSec": 1.0,
+      "inputs": [],
+      "producesItem": "rainbow-dye"
+    }
+  ],
+  "blockout": [
+    { "shape": "box", "size": [5.2, 4.0, 4.8], "position": [0.4, 2.0, 0], "colorHex": "#38bdf8" },
+    { "shape": "cylinder", "size": [1.5, 5.8, 1.5], "position": [-1.6, 3.2, 0], "colorHex": "#a855f7" }
+  ],
+  "detailed": {
+    "shellColorHex": "#dbeafe",
+    "trimColorHex": "#ec4899",
+    "roofStyle": "prism-spout",
+    "interiorTheme": "color-pump",
+    "hasCutawayWindow": true,
+    "smokeOffsets": [{ "x": 0, "y": 6.9, "z": 0 }],
+    "helperTeddySide": "none"
+  }
+}

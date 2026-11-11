@@ -1,0 +1,77 @@
+{
+  "id": "gift-wrapper",
+  "name": "Ribbon Gift-Box Wrapper",
+  "category": "wrapping",
+  "placementRule": "open-ground",
+  "footprint": { "width": 8, "depth": 10, "height": 8 },
+  "spinUpSec": 1.2,
+  "spinDownSec": 2.0,
+  "inStackCapacity": 120,
+  "outStackCapacity": 120,
+  "ports": [
+    { "id": "in_0", "type": "input", "relDepth": -0.5, "relWidth": -0.22, "height": 1.0 },
+    { "id": "in_1", "type": "input", "relDepth": -0.5, "relWidth": 0.22, "height": 1.0 },
+    { "id": "out_0", "type": "output", "relDepth": 0.5, "relWidth": 0, "height": 1.0 }
+  ],
+  "modes": [
+    {
+      "id": "deluxe-gift-mode",
+      "label": "Deluxe Toy + Sweet Gift Box",
+      "powerMW": 8,
+      "cycleSec": 1.8,
+      "inputs": [
+        {
+          "itemType": "toy-train",
+          "acceptedItems": ["toy-train", "spinning-top", "toy-rocket", "smart-teddy-toy"],
+          "count": 1
+        },
+        {
+          "itemType": "swirl-lollipop",
+          "acceptedItems": ["swirl-lollipop", "star-cupcake", "spice-pinch", "idea-bulb"],
+          "count": 1
+        }
+      ],
+      "producesItem": "gift-box",
+      "giftCredit": 2,
+      "byproductItem": "sprinkles",
+      "byproductEveryCycles": 2
+    },
+    {
+      "id": "express-gift-mode",
+      "label": "Express Single Gift Wrap",
+      "powerMW": 5,
+      "cycleSec": 1.4,
+      "inputs": [
+        {
+          "itemType": "toy-train",
+          "acceptedItems": ["toy-train", "spinning-top", "toy-rocket", "swirl-lollipop", "star-cupcake"],
+          "count": 1
+        }
+      ],
+      "producesItem": "gift-box",
+      "giftCredit": 1,
+      "byproductItem": "sprinkles",
+      "byproductEveryCycles": 3
+    }
+  ],
+  "basket": {
+    "id": "basket_ribbon_scraps",
+    "label": "RIBBON BOWS",
+    "itemType": "sprinkles",
+    "capacity": 40,
+    "offset": { "x": -1.2, "y": 0, "z": 4.9 }
+  },
+  "blockout": [
+    { "shape": "box", "size": [8.4, 6.8, 6.6], "position": [0, 3.4, 0], "colorHex": "#fbcfe8" },
+    { "shape": "box", "size": [3.2, 2.0, 3.2], "position": [0, 7.6, 0], "colorHex": "#e11d48" }
+  ],
+  "detailed": {
+    "shellColorHex": "#f9dce8",
+    "trimColorHex": "#e11d48",
+    "roofStyle": "ribbon-arch",
+    "interiorTheme": "gift-wrap",
+    "hasCutawayWindow": true,
+    "smokeOffsets": [],
+    "helperTeddySide": "right"
+  }
+}

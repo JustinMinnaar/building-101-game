@@ -1,0 +1,63 @@
+{
+  "id": "sweet-maker",
+  "name": "Swirl-O-Matic Sweet Maker",
+  "category": "sweets",
+  "placementRule": "open-ground",
+  "footprint": { "width": 8, "depth": 10, "height": 8 },
+  "spinUpSec": 1.5,
+  "spinDownSec": 2.5,
+  "inStackCapacity": 100,
+  "outStackCapacity": 100,
+  "ports": [
+    { "id": "in_0", "type": "input", "relDepth": -0.5, "relWidth": -0.2, "height": 1.0 },
+    { "id": "in_1", "type": "input", "relDepth": -0.5, "relWidth": 0.2, "height": 1.0 },
+    { "id": "out_0", "type": "output", "relDepth": 0.5, "relWidth": 0, "height": 1.0 }
+  ],
+  "modes": [
+    {
+      "id": "lollipop-mode",
+      "label": "Rainbow Swirl Lollipops",
+      "powerMW": 6,
+      "cycleSec": 1.8,
+      "inputs": [
+        { "itemType": "sugar-cube", "acceptedItems": ["sugar-cube", "spice-pinch"], "count": 1 },
+        { "itemType": "rainbow-dye", "acceptedItems": ["rainbow-dye", "red-goo", "gold-goo", "blue-goo", "spice-pinch"], "count": 1 }
+      ],
+      "producesItem": "swirl-lollipop",
+      "byproductItem": "sprinkles",
+      "byproductEveryCycles": 1
+    },
+    {
+      "id": "cupcake-mode",
+      "label": "Frosted Star Cupcakes",
+      "powerMW": 5,
+      "cycleSec": 1.5,
+      "inputs": [
+        { "itemType": "sugar-cube", "count": 1 }
+      ],
+      "producesItem": "star-cupcake",
+      "byproductItem": "sprinkles",
+      "byproductEveryCycles": 2
+    }
+  ],
+  "basket": {
+    "id": "basket_sprinkles",
+    "label": "EXTRA SPRINKLES",
+    "itemType": "sprinkles",
+    "capacity": 40,
+    "offset": { "x": -1.2, "y": 0, "z": 4.9 }
+  },
+  "blockout": [
+    { "shape": "box", "size": [8.4, 6.8, 6.6], "position": [0, 3.4, 0], "colorHex": "#f5ebe0" },
+    { "shape": "box", "size": [8.8, 1.4, 7.2], "position": [0, 7.2, 0], "colorHex": "#ef4444" }
+  ],
+  "detailed": {
+    "shellColorHex": "#ede0ce",
+    "trimColorHex": "#e05252",
+    "roofStyle": "striped-awning",
+    "interiorTheme": "sweet-swirl",
+    "hasCutawayWindow": true,
+    "smokeOffsets": [],
+    "helperTeddySide": "none"
+  }
+}

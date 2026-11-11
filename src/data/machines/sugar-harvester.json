@@ -1,0 +1,38 @@
+{
+  "id": "sugar-harvester",
+  "name": "Sugar & Timber Harvester",
+  "category": "harvest",
+  "placementRule": "resource-node",
+  "acceptedNodeTypes": ["sugar-cube", "wood-block", "tin-ingot"],
+  "footprint": { "width": 6, "depth": 8, "height": 7 },
+  "spinUpSec": 1.0,
+  "spinDownSec": 1.5,
+  "inStackCapacity": 50,
+  "outStackCapacity": 100,
+  "ports": [
+    { "id": "out_0", "type": "output", "relDepth": 0.5, "relWidth": 0, "height": 1.0 }
+  ],
+  "modes": [
+    {
+      "id": "harvest-default",
+      "label": "Gentle Scoop Harvest",
+      "powerMW": 4,
+      "cycleSec": 1.0,
+      "inputs": [],
+      "producesItem": "sugar-cube"
+    }
+  ],
+  "blockout": [
+    { "shape": "box", "size": [5.4, 4.2, 4.8], "position": [0.4, 2.1, 0], "colorHex": "#fde68a" },
+    { "shape": "cylinder", "size": [1.3, 5.5, 1.3], "position": [-1.8, 3.0, 0], "colorHex": "#f472b6" }
+  ],
+  "detailed": {
+    "shellColorHex": "#f3e5d0",
+    "trimColorHex": "#f472b6",
+    "roofStyle": "candy-dome",
+    "interiorTheme": "sugar-mill",
+    "hasCutawayWindow": true,
+    "smokeOffsets": [{ "x": -1.5, "y": 6.8, "z": 0 }],
+    "helperTeddySide": "none"
+  }
+}
