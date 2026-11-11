@@ -1,7 +1,7 @@
 # TASK-20261110-2305: Teddy's Sweetshop & Wonder-Toy Factory Playable Prototype & Claymation 3D Diorama Pipeline
 
 - **Date / Time Reference**: 2026-11-10 23:05:00 (+02:00)
-- **Status**: `Pending Commit`
+- **Status**: `Committed` (`2a32213` on `2026-11-11 12:00`)
 - **Related Stories**: [`STORY-003`](file:///f:/Dev/building-101-game/stories/story-003-teddy-sweetshop-and-wonder-toy-factory.md), [`STORY-001`](file:///f:/Dev/building-101-game/stories/story-001-machine-framework-and-visual-designer.md)
 
 ---

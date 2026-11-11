@@ -1,7 +1,7 @@
 # TASK-20261111-1159: Git Initialization, `.gitignore`, and AI Directives Alignment with Document-Vault-Manager
 
 - **Date / Time Reference**: `2026-11-11 11:59`
-- **Status**: `Pending Commit`
+- **Status**: `Committed` (`2a32213` on `2026-11-11 12:00`)
 
 ## 1. Summary
 Initialized Git version control (`main` branch) for `building-101-game`, expanded `.gitignore`, and aligned `.agents/AGENTS.md` (plus `.agents/memory/MEMORY.md` and `docs/issues.md`) with the AI workspace governance of `F:\Dev\PaperOp\Document-Vault-Manager`, including the explicit `'commit'` (test, multi-task commit using tasks done, `git push`, and task ledger update) protocol, `'review'` protocol, and `'check performance'` protocol.
